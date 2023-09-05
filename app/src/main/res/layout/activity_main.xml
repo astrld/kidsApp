@@ -8,6 +8,7 @@
     tools:context=".MainActivity"
     >
 
+
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
@@ -19,14 +20,119 @@
 
     </ImageView>
 
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></SurfaceView>
+
+    <TextView
+        android:id="@+id/colorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="675dp" />
+
+    <ImageView
+        android:id="@+id/ballIV"
+        android:layout_width="62.5dp"
+        android:layout_height="62.5dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="680dp"
+        android:elevation="12dp"
+        />
+
     <LinearLayout
         android:id="@+id/layout2"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="290dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="-1dp"
         android:orientation="horizontal"
         >
+
+        <LinearLayout
+            android:id="@+id/ballLayout"
+            android:layout_width="67.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="330dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/redIVBorder"
+                android:layout_width="62.5dp"
+                android:layout_height="62.5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:elevation="12dp"
+                android:shape="ring"
+                android:thicknessRatio="0"
+                app:cardCornerRadius="100dp">
+                <ImageView
+                    android:id="@+id/redIVSelect"
+                    android:layout_width="62.5dp"
+                    android:layout_height="62.5dp"
+                    android:src="@mipmap/red_ball_foreground" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/blueIVBorder"
+                android:layout_width="62.5dp"
+                android:layout_height="62.5dp"
+                android:layout_centerHorizontal="true"
+
+                android:layout_margin="5dp"
+                android:elevation="12dp"
+                android:shape="ring"
+                android:thicknessRatio="0"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:id="@+id/blueIVSelect"
+                    android:layout_width="62.5dp"
+                    android:layout_height="62.5dp"
+                    android:src="@mipmap/blue_ball_foreground" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/greenIVBorder"
+                android:layout_width="62.5dp"
+
+                android:layout_height="62.5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:elevation="12dp"
+                android:shape="ring"
+                android:thicknessRatio="0"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:id="@+id/greenIVSelect"
+                    android:layout_width="62.5dp"
+                    android:layout_height="62.5dp"
+                    android:src="@mipmap/green_ball_foreground" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/yellowIVBorder"
+                android:layout_width="62.5dp"
+                android:layout_height="62.5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:elevation="12dp"
+                android:shape="ring"
+                android:thicknessRatio="0"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:id="@+id/yellowIVSelect"
+                    android:layout_width="62.5dp"
+                    android:layout_height="62.5dp"
+                    android:src="@mipmap/yellow_ball_" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
 
     </LinearLayout>
 
